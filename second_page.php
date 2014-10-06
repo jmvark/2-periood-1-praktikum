@@ -11,12 +11,18 @@ charset=utf-8">
 
 <body>
 
-    <a href="index.php">Esimesele lehele</a>
-    <?php
-    	$page_link = "second_page.php";
-    	$name = "jason";
-    ?>
-    <a href="<?php echo $page_link . '?name=' . $name; ?>”> 
+    <a href="index.php?test=katsetus kas nii toimib">Esimesele lehele</a>
+  <?php 
+  	$example = array("name" =>"jason", "lastname" => "vargens");
+
+
+  ?>
+
+  <?php echo "<p>" . $_GET["name"] . "</p>"; ?>
+<?php $username = $_GET["name"]; ?>
+
+
+
 
 </body>
 </html>

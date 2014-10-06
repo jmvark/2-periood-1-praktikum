@@ -9,13 +9,18 @@ charset=utf-8">
 </head>
 
 <body>
+    <?php
 
+    ?>
     <?php
       $page_link = "second_page.php";
       $name = "jason";
+      $lastname = "vargens";
+      $age= "89"
     ?>
-    <a href="<?php echo $page_link . '?name=' . $name; ?>">Teisele lehele</a>
-
+    <a href="<?php echo $page_link . '?name=' . $name . '&lastname=' . $lastname . '&age=' . $age; ?>">Teisele lehele</a>
+<?php 
+echo $_GET["test"];?>
 
 </body>
 </html>
